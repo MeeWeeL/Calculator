@@ -20,21 +20,23 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import static android.content.DialogInterface.*;
+
+public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
 
 
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button button1 = (Button)findViewById(R.id.button1);
-        button1.setOnClickListener(this);
+        setContentView(R.layout.activity_calculator);
+        Button button_to_home = (Button)findViewById(R.id.button_to_home);
+        button_to_home.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent i = new Intent(this, SecondActivity.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 }
