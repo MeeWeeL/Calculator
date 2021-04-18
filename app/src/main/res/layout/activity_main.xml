@@ -3,23 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#ff619d"
-            android:textSize="34sp"
-            android:text="@string/my_big_brain"/>
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff619d"
+        android:textSize="34sp"
+        android:text="@string/my_big_brain"/>
 
 
-    </LinearLayout>
 
     <Button
         android:id="@+id/button1"
@@ -44,7 +38,8 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
+                android:layout_gravity="bottom"
                 android:src="@drawable/anig1"/>
 
         </LinearLayout>
