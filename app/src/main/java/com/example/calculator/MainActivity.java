@@ -20,7 +20,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
 
 
@@ -28,12 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button1 = (Button)findViewById(R.id.button1);
-        button1.setOnClickListener(this);
+
     }
 
-    @Override
-    public void onClick(View v) {
+    public void onCalculator(View v) {
         Intent i = new Intent(this, SecondActivity.class);
         startActivity(i);
     }

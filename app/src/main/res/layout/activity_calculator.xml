@@ -25,6 +25,7 @@
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:textSize="25dp"
+            android:onClick="onHome"
             android:text="@string/home"/>
 
     </LinearLayout>
@@ -35,11 +36,22 @@
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:textColor="#950A72"
+            android:textSize="30dp"/>
 
 
         <LinearLayout
@@ -52,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button1Click"
                 android:text="@string/button1" />
             <Button
                 android:id="@+id/button_2"
@@ -59,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button2Click"
                 android:text="@string/button2"/>
             <Button
                 android:id="@+id/button_3"
@@ -66,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button3Click"
                 android:text="@string/button3"/>
         </LinearLayout>
         <LinearLayout
@@ -78,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button4Click"
                 android:text="@string/button4"/>
             <Button
                 android:id="@+id/button_5"
@@ -85,6 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button5Click"
                 android:text="@string/button5"/>
             <Button
                 android:id="@+id/button_6"
@@ -92,6 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button6Click"
                 android:text="@string/button6"/>
         </LinearLayout>
         <LinearLayout
@@ -104,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button7Click"
                 android:text="@string/button7"/>
             <Button
                 android:id="@+id/button_8"
@@ -111,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button8Click"
                 android:text="@string/button8"/>
             <Button
                 android:id="@+id/button_9"
@@ -118,6 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="button9Click"
                 android:text="@string/button9"/>
         </LinearLayout>
         <LinearLayout
@@ -130,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="6"
+                android:onClick="button0Click"
                 android:text="@string/button0"/>
             <Button
                 android:id="@+id/button_point"
@@ -193,6 +215,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:onClick="plusButtonClick"
                 android:text="@string/equally"/>
 
         </LinearLayout>
@@ -201,6 +224,6 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="2" />
 </LinearLayout>
 
