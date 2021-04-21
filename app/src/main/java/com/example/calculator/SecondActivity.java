@@ -42,57 +42,101 @@ public class SecondActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
-    public void button1Click(View v) {
-        calculator.setTextView("1");
-    }
-    public void button2Click(View v) {
-        calculator.setTextView("2");
-    }
-    public void button3Click(View v) {
+
+    public void onPlus(View v) {
         TextView testText = (TextView)findViewById(R.id.Result);
         String text = (String)testText.getText();
-        calculator.setTextView("3");
-    }
-    public void button4Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("4");
-    }
-    public void button5Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("5");
-    }
-    public void button6Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("6");
-    }
-    public void button7Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("7");
-    }
-    public void button8Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("8");
-    }
-    public void button9Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("9");
-    }
-    public void button0Click(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
-        String text = (String)testText.getText();
-        calculator.setTextView("0");
+        Calculator.setResult(text);
+        testText.setText("0");
+        Calculator.setAction("+");
     }
 
-    public void plusButtonClick(View v) {
+    public void onMinus(View v) {
         TextView testText = (TextView)findViewById(R.id.Result);
-        calculator.setAction((String)testText.getText(), "+");
+        String text = (String)testText.getText();
+        Calculator.setResult(text);
         testText.setText("0");
+        Calculator.setAction("-");
     }
+
+    public void onDivision(View v) {
+        TextView testText = (TextView)findViewById(R.id.Result);
+        String text = (String)testText.getText();
+        Calculator.setResult(text);
+        testText.setText("0");
+        Calculator.setAction("/");
+    }
+
+    public void onMultiple(View v) {
+        TextView testText = (TextView)findViewById(R.id.Result);
+        String text = (String)testText.getText();
+        Calculator.setResult(text);
+        testText.setText("0");
+        Calculator.setAction("*");
+    }
+
+    public void onEqually(View v) {
+        TextView testText = (TextView)findViewById(R.id.Result);
+        String text = (String)testText.getText();
+        Calculator.setNumber(text);
+        testText.setText(Calculator.getResult());
+    }
+
+    public void button1Click(View v) {
+        setCalculatorTextView("1");
+    }
+
+    public void button2Click(View v) {
+        setCalculatorTextView("2");
+    }
+
+    public void button3Click(View v) {
+        setCalculatorTextView("3");
+    }
+
+    public void button4Click(View v) {
+        setCalculatorTextView("4");
+    }
+
+    public void button5Click(View v) {
+        setCalculatorTextView("5");
+    }
+
+    public void button6Click(View v) {
+        setCalculatorTextView("6");
+    }
+
+    public void button7Click(View v) {
+        setCalculatorTextView("7");
+    }
+
+    public void button8Click(View v) {
+        setCalculatorTextView("8");
+    }
+
+    public void button9Click(View v) {
+        setCalculatorTextView("9");
+    }
+
+    public void button0Click(View v) {
+        setCalculatorTextView("0");
+    }
+
+    public void setCalculatorTextView(String num) {
+        TextView testText = (TextView)findViewById(R.id.Result);
+        String text = (String)testText.getText();
+        testText.setText(checkText(text, num));
+    }
+
+    public String checkText(String text, String num) {
+        if (text.equals("0")) {
+            text = num;
+        } else {
+            text += num;
+        }
+        return text;
+    }
+
+
 
 }

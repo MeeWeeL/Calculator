@@ -178,12 +178,14 @@
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"
                     android:layout_weight="6"
+                    android:onClick="onPlus"
                     android:text="@string/plus"/>
                 <Button
                     android:id="@+id/button_minus"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"
+                    android:onClick="onMinus"
                     android:layout_weight="6"
                     android:text="@string/minus"/>
             </LinearLayout>
@@ -199,6 +201,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"
                     android:layout_weight="6"
+                    android:onClick="onMultiple"
                     android:text="x"/>
                 <Button
                     android:id="@+id/button_division"
@@ -206,6 +209,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="4dp"
                     android:layout_weight="6"
+                    android:onClick="onDivision"
                     android:text="/"/>
             </LinearLayout>
 
@@ -215,7 +219,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
-                android:onClick="plusButtonClick"
+                android:onClick="onEqually"
                 android:text="@string/equally"/>
 
         </LinearLayout>
