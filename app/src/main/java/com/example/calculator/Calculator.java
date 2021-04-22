@@ -6,10 +6,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Calculator extends AppCompatActivity {
-    private static String result;
-    private static String number;
-    private static String action;
+    private static String result = "0";
+    private static String number = "0";
+    private static String action = "+";
 
+    public static String getJustResult() {
+        return result;
+    }
     public static void setResult(String text) {
         result = text;
     }
@@ -27,15 +30,15 @@ public class Calculator extends AppCompatActivity {
         Integer num2 = Integer.parseInt(number);
         switch (action) {
             case "+":
-                return Integer.toString(num1 + num2);
+                return result = Integer.toString(num1 + num2);
             case "-":
-                return Integer.toString(num1 - num2);
+                return result = Integer.toString(num1 - num2);
             case "/":
-                return Integer.toString(num1 / num2);
+                return result = Integer.toString(num1 / num2);
             case "*":
-                return Integer.toString(num1 * num2);
+                return result = Integer.toString(num1 * num2);
             default:
-                return "0";
+                return result = "0";
         }
     }
 }
