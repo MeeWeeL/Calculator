@@ -68,7 +68,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void onMultiple(View v) {
-        TextView testText = (TextView)findViewById(R.id.Result);
+        TextView testText = findViewById(R.id.Result);
         String text = (String)testText.getText();
         Calculator.setResult(text);
         testText.setText("0");
