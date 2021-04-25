@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/aniland3" />
+        android:src="@drawable/aniland7" />
 
 
     <include
@@ -32,15 +32,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            <Space
-                android:layout_width="250dp"
-                android:layout_height="match_parent"/>
 
             <include
                 android:id="@+id/calc2"
-                android:layout_width="match_parent"
+                android:layout_width="500dp"
                 android:layout_height="match_parent"
                 layout="@layout/calculator"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="numButtons">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">4dp</item>
-        <item name="android:layout_weight">1</item>
+    <style name="calcButtons" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:backgroundTint">@color/soft_orange</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="numButtons" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:backgroundTint">@color/calcNums</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:gravity">center</item>
+
     </style>
 </resources>
