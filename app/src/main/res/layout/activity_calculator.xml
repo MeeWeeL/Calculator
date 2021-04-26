@@ -30,7 +30,7 @@
             android:id="@+id/calc2"
 
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="@dimen/main_calc_size"
             android:layout_alignParentBottom="true"
             layout="@layout/calculator"/>
 
